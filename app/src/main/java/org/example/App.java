@@ -9,6 +9,15 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        String note = "The bird is red";
+        String[] articles = {"I write a lot.", "To and fro"};
+
+        boolean result = NoteBuilder.canCreateNote(note, articles);
+
+        if(result){
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
     }
 }
